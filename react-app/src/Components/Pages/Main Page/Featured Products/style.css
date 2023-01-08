@@ -1,0 +1,129 @@
+.product-boxes {
+    width: 23.5%;
+    margin-bottom: 1.5rem;
+    background-color: #FFFFFF;
+}
+
+.product-boxes:hover .product-img-div>img{
+    transform: scale(1.2);
+}
+
+.product-boxes:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.product-boxes:hover .prod-hover-btns {
+    display: block;
+}
+.product-img-div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.product-details {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.product-title {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3D464D;
+    cursor: pointer;
+}
+.product-title:hover {
+    color: #FFD333;
+}
+
+.product-prices {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.new-price {
+    margin-right: 0.5rem;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #3D464D;
+}
+
+.product-old-price {
+    color: #3D464D;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.del-old-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.product-review {
+    margin-bottom: 0.25rem;
+    text-align: center;
+    font-size: 80%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.product-reviews {
+    margin-left: 0.25rem;
+    color: #6C757D;
+}
+
+.review-star {
+    color: #FFD333;
+    margin-right: 2px;
+}
+
+.prod-hover-btns {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.50);
+    display: none;
+}
+
+.prod-hover-btns div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #313335;
+    padding: 0.6rem;
+    color: #313335;
+    text-align: center;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.hover-btn:hover {
+    background-color:  #313335;
+    color: #FFD333;
+}

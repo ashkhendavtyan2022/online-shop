@@ -1,0 +1,24 @@
+.shop-section {
+    display: flex;
+}
+
+.shop-filters {
+    width: 25%;
+}
+
+.price-filter {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+
+}
+
+.products-boxes {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
