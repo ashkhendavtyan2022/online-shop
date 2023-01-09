@@ -8,6 +8,10 @@ import product7 from "../assets/images/product-7.jpg";
 import product8 from "../assets/images/product-8.jpg";
 import product9 from "../assets/images/product-9.jpg";
 
+import carousel1 from "../assets/images/carousel-1.jpg";
+import carousel2 from "../assets/images/carousel-2.jpg";
+import carousel3 from "../assets/images/carousel-3.jpg";
+
 export const SHOP_ITEMS = [
   {
     img: product1,
@@ -82,3 +86,28 @@ export const SHOP_ITEMS = [
     color: "blue",
   },
 ];
+
+
+
+export const SLIDER_IMG = [
+  {
+  id: 1,
+  image: carousel1,
+  title: "Men Fashion",
+  desc: "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+  btn: "Shop Now",
+},
+{
+  id: 2,
+  image: carousel2,
+  title: "Women Fashion",
+  desc: "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+  btn: "Shop Now",
+},
+{
+  id: 3,
+  image: carousel3,
+  title: "Kid's Fashion",
+  desc: "Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam",
+  btn: "Shop Now",
+}]
