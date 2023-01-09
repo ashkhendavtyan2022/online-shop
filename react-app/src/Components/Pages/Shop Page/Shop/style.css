@@ -4,13 +4,16 @@
 
 .shop-filters {
     width: 25%;
+    padding-right: 15px;
+    background-color: #FFFFFF;
+    margin-right: 2rem;
+
 }
 
 .price-filter {
     width: 100%;
     margin-bottom: 30px;
     padding: 1.5rem;
-    background-color: #FFFFFF;
 
 }
 

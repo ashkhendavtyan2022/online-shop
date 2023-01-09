@@ -1,5 +1,5 @@
 .product-boxes {
-    width: 23.5%;
+    width: 310px;
     margin-bottom: 1.5rem;
     background-color: #FFFFFF;
 }
@@ -9,7 +9,7 @@
 }
 
 .product-boxes:hover {
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 0 30px #dddddd;
 }
 
 .product-boxes:hover .prod-hover-btns {

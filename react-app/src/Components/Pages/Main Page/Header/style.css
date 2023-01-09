@@ -241,6 +241,7 @@
     z-index: 10;
     background-color: #ffffff;
     list-style: none;
+    z-index: 100;
 }
 
 .navbar-cat-item{
@@ -337,7 +338,7 @@
     color: #FFD333;
 }
 
-.hero-navbar-menu-items > li:hover {
+.menu-item a:hover {
     color: #FFD333;
 }
 
@@ -364,6 +365,7 @@
     position: absolute;
     top: 2.7rem;
     left: 0;
+    z-index: 100;
     width: 10rem;
     padding: 0.5rem 0;
     text-align: left;

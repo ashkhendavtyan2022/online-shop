@@ -1,0 +1,15 @@
+.checkbox-items {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.checkbox-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box input {
+    margin-right: 0.5rem;
+    accent-color: #FFD333;
+}

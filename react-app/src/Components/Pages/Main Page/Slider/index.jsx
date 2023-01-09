@@ -18,6 +18,31 @@ const Slider = () => {
                     <button>Shop Now</button>
                 </div>
             </div>
+            {/* <div className="hero-slider-images">
+                <img src={carousel2} alt="Women Fashion" />
+            </div>
+            <div className="hero-slider-caption">
+                <div className="slider-details">
+                    <h1>Women Fashion</h1>
+                    <p>Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div className="hero-slider-images">
+                <img src={carousel3} alt="KIds Fashion" />
+            </div>
+            <div className="hero-slider-caption">
+                <div className="slider-details">
+                    <h1>Kids Fashion</h1>
+                    <p>Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
+                    <button>Shop Now</button>
+                </div>
+            </div> */}
+        </div>
+        <div className="hero-slider-controls">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
 
     </div>

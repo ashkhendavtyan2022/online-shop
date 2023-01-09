@@ -24,12 +24,16 @@ import product6 from "./../../../../assets/images/product-6.jpg";
 import product7 from "./../../../../assets/images/product-7.jpg";
 import product8 from "./../../../../assets/images/product-8.jpg";
 
+import offer1 from "../../../../assets/images/offer-1.jpg";
+import offer2 from "../../../../assets/images/offer-2.jpg";
+
 
 
 import {FaCheck} from "react-icons/fa";
 import {FaShippingFast} from "react-icons/fa";
 import {FaExchangeAlt} from "react-icons/fa";
 import {FaPhoneVolume} from "react-icons/fa";
+import SpecialOffer from "../Special Offer";
 
 
 const Home = () => {
@@ -191,7 +195,18 @@ const Home = () => {
 
     return <div className="container">
         <div className="wrapper">
-                {/* <Slider /> */}
+            <div className="slider-section">
+                <div className="slider-container">
+                    <Slider />
+                </div>
+                <div className="spec-offer-container">
+                    <div className="spec-offer-wrapper">
+                        <SpecialOffer img = {offer1} discount="Save 20%" title="Special Offer" btn="Shop Now"/>
+                        <SpecialOffer img = {offer2} discount="Save 20%" title="Special Offer" btn="Shop Now"/>
+                    </div>
+                    
+                </div>
+            </div>
             <div className="benefits-section">
                     {benefits.map((elem, index) => {
                         return <Benefits 
@@ -234,6 +249,16 @@ const Home = () => {
                             />
                         })}
                     </div>
+            </div>
+            <div className="hero-section">
+                <div className="special-offer-boxes">
+                    <div className="special-offer-box2">
+                        <SpecialOffer img = {offer1} discount="Save 20%" title="Special Offer" btn="Shop Now"/>
+                    </div>
+                    <div className="special-offer-box2">
+                        <SpecialOffer img = {offer2} discount="Save 20%" title="Special Offer" btn="Shop Now"/>
+                    </div>
+                </div>
             </div>
             <div className="hero-section">
                 <h2 className="hero-section-title">
