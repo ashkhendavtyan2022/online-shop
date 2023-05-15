@@ -114,3 +114,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+.header-col2-dropdown > li:hover {
+     background-color: #efeaea;
+     cursor: pointer;
+}

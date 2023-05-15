@@ -9,6 +9,9 @@ import {FaSearch} from "react-icons/fa";
 import {FaBars} from "react-icons/fa";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../../../../Context";
+import {SignUp} from "../SignUp Popup/index";
+import { SignIn } from "../SignIn Popup/index";
 
 
 const Header = () => {
@@ -16,9 +19,8 @@ const Header = () => {
     const [dropdownCurrency, setDropdownCurrency] = useState(false);
     const [dropdownLanguage, setDropdownLanguage] = useState(false);
 
-    const handleDropdownAccount = () => {
-        setDropdownAccount(!dropdownAccount)
-
+    const handleDropdownAccount = (e) => {
+        setDropdownAccount(!dropdownAccount) 
         if(dropdownCurrency) {
             setDropdownCurrency(!dropdownCurrency)
         }
@@ -26,6 +28,7 @@ const Header = () => {
         if(dropdownLanguage) {
             setDropdownLanguage(!dropdownLanguage)
         }
+        // setState({[e]: Object.e})
     };
 
     const handleDropdownCurrency = () => {
@@ -59,8 +62,30 @@ const Header = () => {
     };
 
 
+    const {activeSignup, setActiveSignup} = useGlobalContext();
+    const openSignUp = () => {
+        setActiveSignup({signup : !activeSignup.signup})
+    }
+
+    const openSignIn = () => {
+        setActiveSignup({signin : !activeSignup.signin})
+    }
+
+    if(activeSignup.signin || activeSignup.signup) {
+        document.body.classList.add('active-popup')
+      } else {
+        document.body.classList.remove('active-popup')
+      }
+
+    const toSignup = () => {
+        
+    }
+
 
     return <div className="hero-container">
+        {activeSignup.signin ? <SignIn onClick={openSignIn}/> : null }
+        {activeSignup.signup ? <SignUp onClick={openSignUp}/> : null }
+        {console.log(activeSignup)}
         <div className="header-row1">
             <div className="hero-header-row">
                 <ul className="header-col header-col1">
@@ -75,8 +100,8 @@ const Header = () => {
                             <FaCaretDown className="dropdown-icon"/>
                             {dropdownAccount ? (
                                 <ul className="header-col2-dropdown">
-                                    <li>Sign In</li>
-                                    <li>Sign Up</li>
+                                    <li onClick={openSignIn} toSignup={toSignup}>Sign In</li>
+                                    <li onClick={openSignUp}>Sign Up</li>
                                 </ul>) : null}
                     </li>
                     <li onClick={handleDropdownCurrency}>
